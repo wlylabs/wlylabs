@@ -80,8 +80,8 @@ Simple, readable, maintainable by design.
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=wlylabs&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=D97757&icon_color=D97757&text_color=c9d1d9&count_private=true" alt="GitHub Stats" />
-<img height="165" src="https://streak-stats.demolab.com/?user=wlylabs&theme=tokyonight&hide_border=true&background=0D1117&ring=D97757&fire=D97757&currStreakLabel=D97757" alt="GitHub Streak" />
+<img src="https://github-readme-stats.vercel.app/api?username=wlylabs&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=D97757&icon_color=D97757&text_color=c9d1d9&count_private=true" alt="GitHub Stats" width="49%" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=wlylabs&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=D97757&text_color=c9d1d9" alt="Top Languages" width="34%" />
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=wlylabs&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=D97757&line=D97757&point=412991" alt="Activity Graph" width="100%" />
 
