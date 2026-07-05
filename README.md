@@ -71,28 +71,6 @@ Simple, readable, maintainable by design.
 
 </div>
 
-<br />
-
-## 📊 GitHub Stats
-
-<div align="center">
-<table>
-<tr>
-<td width="60%">
-<img src="https://github-readme-stats.vercel.app/api?username=wlylabs&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=D97757&icon_color=D97757&text_color=c9d1d9" alt="GitHub Stats" width="100%" />
-</td>
-<td width="40%">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=wlylabs&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=D97757&text_color=c9d1d9" alt="Top Languages" width="100%" />
-</td>
-</tr>
-</table>
-
-</div>
-
-<sub>If a card above shows a loading error, GitHub's raw-image cache just needs a refresh — reload the page.</sub>
-
-<br />
-
 ## 🔭 Currently Building
 
 | Project | Description | Stack | Status |
