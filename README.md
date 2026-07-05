@@ -98,12 +98,7 @@ Simple, readable, maintainable by design.
 
 **Code & Ship**
 
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-<img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
-<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
-<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
-<img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind" />
-<img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
+<img src="https://skillicons.dev/icons?i=ts,nextjs,react,nodejs,tailwind,vercel" alt="Code stack" />
 
 </div>
 
@@ -114,18 +109,18 @@ Simple, readable, maintainable by design.
 <div align="center">
 <table>
 <tr>
-<td width="50%">
+<td width="60%">
 <img src="https://github-readme-stats.vercel.app/api?username=wlylabs&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=D97757&icon_color=D97757&text_color=c9d1d9" alt="GitHub Stats" width="100%" />
 </td>
-<td width="50%">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=wlylabs&theme=tokyonight&hide_border=true&background=0D1117&ring=D97757&fire=D97757&currStreakLabel=D97757" alt="GitHub Streak" width="100%" />
+<td width="40%">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=wlylabs&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=D97757&text_color=c9d1d9" alt="Top Languages" width="100%" />
 </td>
 </tr>
 </table>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=wlylabs&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=D97757&line=D97757&point=412991" alt="Activity Graph" width="100%" />
-
 </div>
+
+<sub>If a card above shows a loading error, GitHub's raw-image cache just needs a refresh — reload the page.</sub>
 
 <br />
 
