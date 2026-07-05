@@ -75,7 +75,10 @@ Simple, readable, maintainable by design.
 
 | Project | Description | Stack | Status |
 |---|---|---|---|
-| _cooking..._ | 🚧 Something new is in the oven — stay tuned. | — | ![status](https://img.shields.io/badge/status-WIP-412991?style=flat-square) |
+| [wlyfun](https://github.com/wlylabs/wlyfun) | Degen-themed maze runner — race a growing maze, ride on-the-fly leverage, and flex a shareable PnL card on close | Next.js, React, TypeScript, Tailwind | ![status](https://img.shields.io/badge/status-WIP-412991?style=flat-square) |
+| [wlybooks](https://github.com/wlylabs/wlybooks) | "The Digital Productivity Blueprint" — a full EN/ID eBook + 19-template planner toolkit, with a freemium preview site and print-ready PDF export | Python, Markdown | ![status](https://img.shields.io/badge/status-WIP-412991?style=flat-square) |
+| [wlytics](https://github.com/wlylabs/wlytics) | Automated dashboard that researches keywords and ships SEO-ready tech articles straight to Blogger/Dev.to, powered by Groq + Gemini | Next.js, Supabase, Groq, Gemini | ![status](https://img.shields.io/badge/status-WIP-412991?style=flat-square) |
+| [wlylink](https://wlylabs.github.io/wlylink/) | Free, account-less link manager — save, organize, and share links entirely in the browser, installable as a PWA | JavaScript, PWA | ![status](https://img.shields.io/badge/status-live-2ea44f?style=flat-square) |
 
 <sub>Pin your live projects here once they ship — add a row per project with a link, one-line pitch, and status badge.</sub>
 
