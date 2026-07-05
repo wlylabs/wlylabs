@@ -14,37 +14,6 @@
 
 </div>
 
-<br />
-
-<!-- ============ DASHBOARD OVERVIEW ============ -->
-<table width="100%">
-<tr>
-<td width="33%" align="center">
-
-### 🧭 Role
-**Solo Builder**
-<sub>Idea → Ship, no team</sub>
-
-</td>
-<td width="33%" align="center">
-
-### 🤖 Workflow
-**AI-Native**
-<sub>Vibe coding, tight loops</sub>
-
-</td>
-<td width="33%" align="center">
-
-### 🚀 Focus
-**Shipping**
-<sub>Small releases, always live</sub>
-
-</td>
-</tr>
-</table>
-
-<br />
-
 ## 🚀 About Me
 
 I'm an independent **solo builder** who turns ideas into shipped products — fast.
