@@ -16,35 +16,6 @@
 
 <br />
 
-<!-- ============ DASHBOARD OVERVIEW ============ -->
-<table width="100%">
-<tr>
-<td width="33%" align="center">
-
-### 🧭 Role
-**Solo Builder**
-<sub>Idea → Ship, no team</sub>
-
-</td>
-<td width="33%" align="center">
-
-### 🤖 Workflow
-**AI-Native**
-<sub>Vibe coding, tight loops</sub>
-
-</td>
-<td width="33%" align="center">
-
-### 🚀 Focus
-**Shipping**
-<sub>Small releases, always live</sub>
-
-</td>
-</tr>
-</table>
-
-<br />
-
 ## 🚀 About Me
 
 I'm an independent **solo builder** who turns ideas into shipped products — fast.
@@ -85,52 +56,45 @@ Simple, readable, maintainable by design.
 
 ## 🛠️ My Stack
 
-<div align="center">
+<p>
+  <img src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude" />
+  <img src="https://img.shields.io/badge/Claude_Code-000000?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude Code" />
+  <img src="https://img.shields.io/badge/Cursor-000000?style=for-the-badge&logo=cursor&logoColor=white" alt="Cursor" />
+  <img src="https://img.shields.io/badge/GitHub_Copilot-000000?style=for-the-badge&logo=githubcopilot&logoColor=white" alt="Copilot" />
+  <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI" />
+  <img src="https://img.shields.io/badge/v0-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="v0" />
+</p>
 
-**AI Copilots**
-
-<img src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude" />
-<img src="https://img.shields.io/badge/Claude_Code-000000?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude Code" />
-<img src="https://img.shields.io/badge/Cursor-000000?style=for-the-badge&logo=cursor&logoColor=white" alt="Cursor" />
-<img src="https://img.shields.io/badge/GitHub_Copilot-000000?style=for-the-badge&logo=githubcopilot&logoColor=white" alt="Copilot" />
-<img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI" />
-<img src="https://img.shields.io/badge/v0-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="v0" />
-
-**Code & Ship**
-
-<img src="https://skillicons.dev/icons?i=ts,nextjs,react,nodejs,tailwind,vercel" alt="Code stack" />
-
-</div>
+<p>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind" />
+  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
+</p>
 
 <br />
 
 ## 📊 GitHub Stats
 
 <div align="center">
-<table>
-<tr>
-<td width="60%">
-<img src="https://github-readme-stats.vercel.app/api?username=wlylabs&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=D97757&icon_color=D97757&text_color=c9d1d9" alt="GitHub Stats" width="100%" />
-</td>
-<td width="40%">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=wlylabs&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=D97757&text_color=c9d1d9" alt="Top Languages" width="100%" />
-</td>
-</tr>
-</table>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=wlylabs&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=D97757&line=D97757&point=412991" alt="Activity Graph" width="100%" />
 
 </div>
-
-<sub>If a card above shows a loading error, GitHub's raw-image cache just needs a refresh — reload the page.</sub>
 
 <br />
 
 ## 🔭 Currently Building
 
-| Project | Description | Stack | Status |
-|---|---|---|---|
-| _cooking..._ | 🚧 Something new is in the oven — stay tuned. | — | ![status](https://img.shields.io/badge/status-WIP-412991?style=flat-square) |
+> 🚧 Cooking up something new — stay tuned. Pin your live projects here once they ship.
 
-<sub>Pin your live projects here once they ship — add a row per project with a link, one-line pitch, and status badge.</sub>
+<!--
+| Project | Description | Stack |
+|---|---|---|
+| [name](link) | one-line pitch | Next.js, Claude |
+-->
 
 <br />
 
