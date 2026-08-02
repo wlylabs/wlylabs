@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Generated SVG assets for the wlylabs GitHub profile, deployed on Vercel",
+  "description": "The wlylabs profile site and its generated assets, deployed on Vercel",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "check": "node scripts/build.mjs --check"
+    "check": "node scripts/build.mjs --check",
+    "og": "node scripts/og.mjs",
+    "dev": "node scripts/build.mjs && npx --yes http-server public -p 3000 -c-1"
   },
   "engines": {
     "node": ">=20"
