@@ -56,9 +56,10 @@ content file feeds both, so a fact can only ever be edited in one place.
 
 ```
 lib/data.js       every fact on the profile — projects, capabilities, stack
-lib/page.js       renders the site from that data
-lib/assets.js     renders the SVGs this README uses
-site/             stylesheet and client scripts, copied verbatim
+lib/page.js       renders the site and the 404 page from that data
+lib/files.js      manifest, robots.txt, sitemap.xml, schema.org graph
+lib/assets.js     renders the SVGs this README uses, and the app icons
+site/             stylesheet, client scripts and service worker, copied verbatim
 public/           generated output; the directory Vercel serves
 ```
 
@@ -67,18 +68,43 @@ npm run build     rebuild public/ from the sources
 npm run check     fail if the committed output drifted (runs in CI)
 npm run dev       build, then serve public/ on :3000
 npm run og        re-rasterise the social card (needs a local browser)
+npm run icons     re-rasterise the PWA and iOS icons (needs a local browser)
 ```
 
 **The site.** Static HTML rendered at build time, no framework and no runtime
 dependencies. It reads end to end with JavaScript blocked — the theme toggle,
-rotating tagline, scroll reveal and nav highlighting are enhancements on top.
-Because no styles or scripts are inline, the Content-Security-Policy in
-[`vercel.json`](vercel.json) needs no `unsafe-inline`: `default-src 'none'` with
-`self` for scripts, styles and images, plus nosniff, `Referrer-Policy`,
-frame-deny, `Permissions-Policy` and HSTS. That CSP is scoped to the document
-routes only — served on an SVG response it would also apply to that SVG's own
-`<style>` block, which is what carries its palette, so the images must not
-inherit it.
+command palette, rotating tagline, scroll reveal and nav highlighting are
+enhancements on top, and every control that needs scripting stays hidden until
+its handler is attached, so the page never shows a dead affordance.
+
+**Getting around.** <kbd>⌘K</kbd> / <kbd>Ctrl K</kbd> (or <kbd>/</kbd>) opens a
+command palette: sections, repositories, copy-to-clipboard, theme, share,
+install, print. It filters on substrings across every keyword and on a
+subsequence of the label, so `cpyhndl` finds *Copy handle*. On a phone it opens
+as a bottom sheet with a 16px input, which is the threshold below which iOS
+Safari zooms the page on focus.
+
+**Print.** The stylesheet has a real print form, so "save as PDF" produces a
+one-page résumé rather than a screenshot: chrome dropped, the dark palette
+forced back to ink, link targets spelled out after their labels, and page breaks
+kept out of the middle of a card.
+
+**Offline.** [`site/sw.js`](site/sw.js) caches the shell — documents
+network-first so a reader online always sees the live page, assets
+stale-while-revalidate, `/api` and `/banner` never. Its cache is named after a
+digest of everything in `public/`, computed at build time, so a deploy that
+changes one byte invalidates the previous cache and no version is ever
+maintained by hand.
+
+**Headers.** Because no styles or scripts are inline, the
+Content-Security-Policy in [`vercel.json`](vercel.json) needs no
+`unsafe-inline`: `default-src 'none'` with `self` for scripts, styles, images,
+worker and manifest, plus nosniff, `Referrer-Policy`, frame-deny,
+`Permissions-Policy` and HSTS. It is matched against every path *without* a file
+extension, which covers the document, the 404 page and any future clean URL
+while deliberately excluding the SVGs — served on an SVG response,
+`default-src 'none'` would also apply to that file's own `<style>` block, which
+is what carries its palette.
 
 **The README images.** Each SVG carries both palettes in one document and
 switches on `prefers-color-scheme`, so this page needs a single relative URL per

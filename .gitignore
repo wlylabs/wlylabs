@@ -1,0 +1,6 @@
+# Nothing here is a dependency of the build — `npm run build` uses only Node
+# built-ins. node_modules appears when playwright is installed to rasterise
+# og.png and the app icons.
+node_modules/
+.vercel/
+.DS_Store
