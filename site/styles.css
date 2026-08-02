@@ -104,6 +104,10 @@ html {
      heading never lands underneath it. */
   scroll-padding-top: calc(var(--nav-h) + 20px);
   -webkit-text-size-adjust: 100%;
+  /* Chromium paints a translucent blue rectangle over whatever was tapped.
+     Every interactive element here already has its own press and focus
+     styling, so the default only reads as a stray flash on a jump link. */
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
