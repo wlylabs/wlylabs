@@ -1,0 +1,5 @@
+# wlylabs — https://wlylabs.vercel.app
+User-agent: *
+Allow: /
+
+Sitemap: https://wlylabs.vercel.app/sitemap.xml

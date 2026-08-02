@@ -23,12 +23,11 @@
       ]
     },
     {
-      "//": "Scoped to the document only. A default-src 'none' policy on an SVG response also applies to that SVG's own <style> block, which is what carries its palette — the images must not inherit it.",
-      "source": "/",
+      "source": "/((?!api/|banner$|.*\\.[a-zA-Z0-9]+$).*)",
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
+          "value": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
         }
       ]
     },
@@ -37,12 +36,21 @@
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
+          "value": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
         }
       ]
     },
     {
-      "source": "/(.*).(svg|png|css|js)",
+      "source": "/404.html",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
+        }
+      ]
+    },
+    {
+      "source": "/(.*).(svg|png|css|js|webmanifest|xml|txt)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -53,6 +61,10 @@
     {
       "source": "/(.*).svg",
       "headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }]
+    },
+    {
+      "source": "/sw.js",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }]
     }
   ]
 }
