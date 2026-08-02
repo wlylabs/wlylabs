@@ -40,7 +40,18 @@
   }
 
   function setTheme(theme) {
+    /**
+     * A swap repoints every token at once, but only some elements transition
+     * colour — nav links, buttons, chips, the 32 list rows. Those cross-fade
+     * for up to 200ms while the page background, cards and hero snap, so the
+     * text and borders visibly trail the new theme. Pin transitions off,
+     * apply the theme, force the recalc, then hand them back: the new colours
+     * are already the "before" value, so nothing has anything left to animate.
+     */
+    root.setAttribute('data-theme-switching', '');
     root.setAttribute('data-theme', theme);
+    void root.offsetHeight;
+    root.removeAttribute('data-theme-switching');
     describe(theme);
     paint(theme);
     try {

@@ -150,6 +150,16 @@ strong {
   border-radius: 4px;
 }
 
+/* Held by app.js for the single frame a theme swap takes, so the elements
+   that transition colour cannot lag behind the ones that repaint instantly.
+   Animations are left alone — they are decorative and theme-independent. */
+:root[data-theme-switching],
+:root[data-theme-switching] *,
+:root[data-theme-switching] *::before,
+:root[data-theme-switching] *::after {
+  transition: none !important;
+}
+
 .skip {
   position: absolute;
   left: -9999px;
