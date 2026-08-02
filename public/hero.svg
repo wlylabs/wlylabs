@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="wlylabs — solo builder across smart contracts, edge AI and automation">
+  <title>wlylabs — solo builder across smart contracts, edge AI and automation</title>
+  <defs>
+    <pattern id="h-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path class="h-grid" d="M40 0H0V40" fill="none" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="h-word" x1="0" y1="0" x2="1" y2="0.6">
+      <stop class="h-sa" offset="0%"/>
+      <stop class="h-sa" offset="58%"/>
+      <stop class="h-sb" offset="100%"/>
+    </linearGradient>
+    <linearGradient id="h-bar" x1="0" y1="0" x2="1" y2="0">
+      <stop class="h-sa" offset="0%"/>
+      <stop class="h-sb" offset="100%"/>
+    </linearGradient>
+    <linearGradient id="h-area" x1="0" y1="0" x2="0" y2="1">
+      <stop class="h-s-area-t" offset="0%"/>
+      <stop class="h-s-area-b" offset="100%"/>
+    </linearGradient>
+    <radialGradient id="h-glow-a" cx="0.5" cy="0.5" r="0.5">
+      <stop class="h-s-glow-a" offset="0%"/>
+      <stop class="h-s-clear-a" offset="100%"/>
+    </radialGradient>
+    <radialGradient id="h-glow-b" cx="0.5" cy="0.5" r="0.5">
+      <stop class="h-s-glow-b" offset="0%"/>
+      <stop class="h-s-clear-b" offset="100%"/>
+    </radialGradient>
+    <style>
+      .h-bg{fill:#FFFFFF;}.h-grid{stroke:#EEF1F5;stroke-opacity:1;}.h-edge{stroke:#DCE1E7;}.h-surf{fill:#F7F8FA;stroke:#DCE1E7;}.h-tx{fill:#0D1117;}.h-mu{fill:#5B6570;}.h-fa{fill:#7A838F;}.h-hair{stroke:#C9D1DA;}.h-aa{fill:#C2551F;}.h-ab{fill:#412991;}.h-sa{stop-color:#C2551F;}.h-sb{stop-color:#412991;}.h-s-area-t{stop-color:#C2551F;stop-opacity:0.34;}.h-s-area-b{stop-color:#C2551F;stop-opacity:0;}.h-s-glow-a{stop-color:#D97757;stop-opacity:0.1;}.h-s-glow-b{stop-color:#412991;stop-opacity:0.12;}.h-s-clear-a{stop-color:#D97757;stop-opacity:0;}.h-s-clear-b{stop-color:#412991;stop-opacity:0;}@media (prefers-color-scheme:dark){.h-bg{fill:#0D1117;}.h-grid{stroke:#161B22;stroke-opacity:0.55;}.h-edge{stroke:#232B35;}.h-surf{fill:#11161D;stroke:#232B35;}.h-tx{fill:#E6EDF3;}.h-mu{fill:#8B949E;}.h-fa{fill:#6E7781;}.h-hair{stroke:#2D3540;}.h-aa{fill:#E8895F;}.h-ab{fill:#8B5CF6;}.h-sa{stop-color:#E8895F;}.h-sb{stop-color:#8B5CF6;}.h-s-area-t{stop-color:#E8895F;stop-opacity:0.34;}.h-s-area-b{stop-color:#E8895F;stop-opacity:0;}.h-s-glow-a{stop-color:#D97757;stop-opacity:0.18;}.h-s-glow-b{stop-color:#412991;stop-opacity:0.21;}.h-s-clear-a{stop-color:#D97757;stop-opacity:0;}.h-s-clear-b{stop-color:#412991;stop-opacity:0;}}
+      .h-mono{font-family:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;}
+      @keyframes h-cyc{0%{opacity:0;}2%{opacity:1;}21.5%{opacity:1;}25%{opacity:0;}100%{opacity:0;}}
+      .h-line{opacity:0;}
+      .h-l0{animation:h-cyc 13.6s 0s infinite;}.h-l1{animation:h-cyc 13.6s 3.4s infinite;}.h-l2{animation:h-cyc 13.6s 6.8s infinite;}.h-l3{animation:h-cyc 13.6s 10.2s infinite;}
+      @keyframes h-draw{from{stroke-dashoffset:1;}to{stroke-dashoffset:0;}}
+      @keyframes h-rise{from{opacity:0;}to{opacity:1;}}
+      @keyframes h-pulse{0%,100%{opacity:1;}50%{opacity:0.25;}}
+      .h-curve{stroke-dasharray:1;stroke-dashoffset:1;animation:h-draw 2.2s cubic-bezier(.22,.61,.36,1) .15s forwards;}
+      .h-fill{opacity:0;animation:h-rise 1.2s ease-out 1.5s forwards;}
+      .h-tip{opacity:0;animation:h-rise .4s ease-out 2.2s forwards;}
+      .h-dot{animation:h-pulse 2.4s ease-in-out infinite;}
+      @media (prefers-reduced-motion: reduce){
+        .h-line{animation:none;opacity:0;}
+        .h-l0{opacity:1;}
+        .h-curve{animation:none;stroke-dashoffset:0;}
+        .h-fill,.h-tip{animation:none;opacity:1;}
+        .h-dot{animation:none;}
+      }
+    </style>
+  </defs>
+
+  <rect class="h-bg" width="1200" height="320" rx="14"/>
+  <rect width="1200" height="320" rx="14" fill="url(#h-grid)"/>
+  <ellipse cx="120" cy="40" rx="520" ry="320" fill="url(#h-glow-a)"/>
+  <ellipse cx="1080" cy="320" rx="560" ry="340" fill="url(#h-glow-b)"/>
+  <rect class="h-edge" x="0.5" y="0.5" width="1199" height="319" rx="14" fill="none"/>
+
+  <g class="h-mono">
+    <text class="h-mu" x="56" y="84" font-size="14" letter-spacing="4.2">INDEPENDENT  ·  SOLO BUILDER</text>
+    <text x="56" y="170" font-size="76" font-weight="700" letter-spacing="-2" fill="url(#h-word)">wlylabs</text>
+    <rect x="56" y="190" width="96" height="4" rx="2" fill="url(#h-bar)"/>
+
+    <g transform="translate(56 234)">
+      <text class="h-aa" x="0" y="0" font-size="19">&#8250;</text>
+      <text class="h-tx h-line h-l0" x="20" y="0" font-size="19">Solo builder. Full stack of one.</text>
+      <text class="h-tx h-line h-l1" x="20" y="0" font-size="19">Bonding-curve ERC20s, proven with Foundry.</text>
+      <text class="h-tx h-line h-l2" x="20" y="0" font-size="19">Streaming LLM apps that fail over at the edge.</text>
+      <text class="h-tx h-line h-l3" x="20" y="0" font-size="19">Pipelines that keep running while I sleep.</text>
+    </g>
+
+    <g transform="translate(56 256)">
+      <rect class="h-surf" x="0" y="0" width="122" height="34" rx="17"/>
+      <circle class="h-aa h-dot" cx="19" cy="17" r="4"/>
+      <text class="h-mu" x="32" y="22" font-size="12" letter-spacing="2.6">SHIPPING</text>
+    </g>
+  </g>
+
+  <g class="h-mono">
+    <text class="h-fa" x="700" y="90" font-size="12" letter-spacing="2.8">PRICE / SUPPLY</text>
+    <line class="h-hair" x1="700" y1="215.5" x2="1144" y2="215.5" stroke-width="1" stroke-dasharray="2 6" opacity="0.7"/>
+    <line class="h-hair" x1="700" y1="181" x2="1144" y2="181" stroke-width="1" stroke-dasharray="2 6" opacity="0.7"/>
+    <line class="h-hair" x1="700" y1="146.5" x2="1144" y2="146.5" stroke-width="1" stroke-dasharray="2 6" opacity="0.7"/>
+    <line class="h-hair" x1="700" y1="250" x2="1144" y2="250" stroke-width="1"/>
+    <path class="h-fill" d="M700,250L706.17,249.55L712.33,249.08L718.5,248.6L724.67,248.1L730.83,247.58L737,247.05L743.17,246.49L749.33,245.92L755.5,245.33L761.67,244.72L767.83,244.08L774,243.43L780.17,242.75L786.33,242.05L792.5,241.32L798.67,240.57L804.83,239.79L811,238.99L817.17,238.15L823.33,237.29L829.5,236.4L835.67,235.48L841.83,234.53L848,233.54L854.17,232.52L860.33,231.46L866.5,230.37L872.67,229.24L878.83,228.07L885,226.86L891.17,225.61L897.33,224.31L903.5,222.97L909.67,221.59L915.83,220.15L922,218.67L928.17,217.13L934.33,215.54L940.5,213.9L946.67,212.2L952.83,210.44L959,208.62L965.17,206.73L971.33,204.78L977.5,202.77L983.67,200.68L989.83,198.52L996,196.29L1002.17,193.98L1008.33,191.59L1014.5,189.12L1020.67,186.56L1026.83,183.91L1033,181.17L1039.17,178.34L1045.33,175.41L1051.5,172.38L1057.67,169.24L1063.83,165.99L1070,162.63L1076.17,159.16L1082.33,155.56L1088.5,151.84L1094.67,147.99L1100.83,144.01L1107,139.89L1113.17,135.63L1119.33,131.22L1125.5,126.66L1131.67,121.94L1137.83,117.05L1144,112L1144,250L700,250Z" fill="url(#h-area)"/>
+    <path class="h-curve" d="M700,250L706.17,249.55L712.33,249.08L718.5,248.6L724.67,248.1L730.83,247.58L737,247.05L743.17,246.49L749.33,245.92L755.5,245.33L761.67,244.72L767.83,244.08L774,243.43L780.17,242.75L786.33,242.05L792.5,241.32L798.67,240.57L804.83,239.79L811,238.99L817.17,238.15L823.33,237.29L829.5,236.4L835.67,235.48L841.83,234.53L848,233.54L854.17,232.52L860.33,231.46L866.5,230.37L872.67,229.24L878.83,228.07L885,226.86L891.17,225.61L897.33,224.31L903.5,222.97L909.67,221.59L915.83,220.15L922,218.67L928.17,217.13L934.33,215.54L940.5,213.9L946.67,212.2L952.83,210.44L959,208.62L965.17,206.73L971.33,204.78L977.5,202.77L983.67,200.68L989.83,198.52L996,196.29L1002.17,193.98L1008.33,191.59L1014.5,189.12L1020.67,186.56L1026.83,183.91L1033,181.17L1039.17,178.34L1045.33,175.41L1051.5,172.38L1057.67,169.24L1063.83,165.99L1070,162.63L1076.17,159.16L1082.33,155.56L1088.5,151.84L1094.67,147.99L1100.83,144.01L1107,139.89L1113.17,135.63L1119.33,131.22L1125.5,126.66L1131.67,121.94L1137.83,117.05L1144,112" pathLength="1" fill="none" stroke="url(#h-bar)" stroke-width="2.5" stroke-linecap="round"/>
+    <g class="h-tip">
+      <circle class="h-ab" cx="1144" cy="112" r="11" opacity="0.16"/>
+      <circle class="h-ab" cx="1144" cy="112" r="4.5"/>
+    </g>
+    <text class="h-fa" x="1144" y="276" font-size="12" letter-spacing="1.4" text-anchor="end">constant product  ·  reserve-backed</text>
+  </g>
+</svg>
