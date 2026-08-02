@@ -1,0 +1,14 @@
+{
+  "name": "wlylabs-profile",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Generated SVG assets for the wlylabs GitHub profile, deployed on Vercel",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs --check"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

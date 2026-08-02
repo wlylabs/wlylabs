@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="211" height="38" viewBox="0 0 211 38" role="img" aria-label="Browse the repositories">
+  <title>Browse the repositories</title>
+  <rect x="0.5" y="0.5" width="210" height="37" rx="10" fill="#0D1117" stroke="#39414D"/>
+  <g transform="translate(18 13)"><path d="M0 6 H11 M6.5 1.5 L11 6 L6.5 10.5" stroke="#8B5CF6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g>
+  <text x="191" y="23.4" text-anchor="end" font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="12.5" letter-spacing="1.9" fill="#E6EDF3">BROWSE THE REPOS</text>
+</svg>

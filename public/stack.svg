@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="374" viewBox="0 0 1200 374" role="img" aria-label="Stack — onchain, application, intelligence and operations tooling">
+  <title>Stack — onchain, application, intelligence and operations tooling</title>
+  <defs>
+    <style>
+      .s-bg{fill:#FFFFFF;}.s-grid{stroke:#EEF1F5;stroke-opacity:1;}.s-edge{stroke:#DCE1E7;}.s-surf{fill:#F7F8FA;stroke:#DCE1E7;}.s-tx{fill:#0D1117;}.s-mu{fill:#5B6570;}.s-fa{fill:#7A838F;}.s-hair{stroke:#C9D1DA;}.s-aa{fill:#C2551F;}.s-ab{fill:#412991;}.s-sa{stop-color:#C2551F;}.s-sb{stop-color:#412991;}.s-s-area-t{stop-color:#C2551F;stop-opacity:0.34;}.s-s-area-b{stop-color:#C2551F;stop-opacity:0;}.s-s-glow-a{stop-color:#D97757;stop-opacity:0.1;}.s-s-glow-b{stop-color:#412991;stop-opacity:0.12;}.s-s-clear-a{stop-color:#D97757;stop-opacity:0;}.s-s-clear-b{stop-color:#412991;stop-opacity:0;}@media (prefers-color-scheme:dark){.s-bg{fill:#0D1117;}.s-grid{stroke:#161B22;stroke-opacity:0.55;}.s-edge{stroke:#232B35;}.s-surf{fill:#11161D;stroke:#232B35;}.s-tx{fill:#E6EDF3;}.s-mu{fill:#8B949E;}.s-fa{fill:#6E7781;}.s-hair{stroke:#2D3540;}.s-aa{fill:#E8895F;}.s-ab{fill:#8B5CF6;}.s-sa{stop-color:#E8895F;}.s-sb{stop-color:#8B5CF6;}.s-s-area-t{stop-color:#E8895F;stop-opacity:0.34;}.s-s-area-b{stop-color:#E8895F;stop-opacity:0;}.s-s-glow-a{stop-color:#D97757;stop-opacity:0.18;}.s-s-glow-b{stop-color:#412991;stop-opacity:0.21;}.s-s-clear-a{stop-color:#D97757;stop-opacity:0;}.s-s-clear-b{stop-color:#412991;stop-opacity:0;}}
+      .s-mono{font-family:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;}
+    </style>
+  </defs>
+  <rect class="s-bg" width="1200" height="374" rx="14"/>
+  <rect class="s-edge" x="0.5" y="0.5" width="1199" height="373" rx="14" fill="none"/>
+  <g class="s-mono">
+    <text class="s-aa" x="34" y="48" font-size="12" letter-spacing="3.4">ONCHAIN</text>
+    <g transform="translate(34 60)"><rect class="s-surf" width="167" height="34" rx="9"/><text class="s-tx" x="83.5" y="22.4" font-size="15" text-anchor="middle">Solidity 0.8.26</text></g>
+    <g transform="translate(210 60)"><rect class="s-surf" width="95" height="34" rx="9"/><text class="s-tx" x="47.5" y="22.4" font-size="15" text-anchor="middle">Foundry</text></g>
+    <g transform="translate(314 60)"><rect class="s-surf" width="140" height="34" rx="9"/><text class="s-tx" x="70" y="22.4" font-size="15" text-anchor="middle">OpenZeppelin</text></g>
+    <g transform="translate(463 60)"><rect class="s-surf" width="167" height="34" rx="9"/><text class="s-tx" x="83.5" y="22.4" font-size="15" text-anchor="middle">EIP-1167 clones</text></g>
+    <g transform="translate(639 60)"><rect class="s-surf" width="122" height="34" rx="9"/><text class="s-tx" x="61" y="22.4" font-size="15" text-anchor="middle">Uniswap v4</text></g>
+    <g transform="translate(770 60)"><rect class="s-surf" width="77" height="34" rx="9"/><text class="s-tx" x="38.5" y="22.4" font-size="15" text-anchor="middle">wagmi</text></g>
+    <g transform="translate(856 60)"><rect class="s-surf" width="68" height="34" rx="9"/><text class="s-tx" x="34" y="22.4" font-size="15" text-anchor="middle">viem</text></g>
+    <g transform="translate(933 60)"><rect class="s-surf" width="95" height="34" rx="9"/><text class="s-tx" x="47.5" y="22.4" font-size="15" text-anchor="middle">Slither</text></g>
+    <text class="s-ab" x="34" y="130" font-size="12" letter-spacing="3.4">APPLICATION</text>
+    <g transform="translate(34 142)"><rect class="s-surf" width="122" height="34" rx="9"/><text class="s-tx" x="61" y="22.4" font-size="15" text-anchor="middle">TypeScript</text></g>
+    <g transform="translate(165 142)"><rect class="s-surf" width="122" height="34" rx="9"/><text class="s-tx" x="61" y="22.4" font-size="15" text-anchor="middle">Next.js 14</text></g>
+    <g transform="translate(296 142)"><rect class="s-surf" width="77" height="34" rx="9"/><text class="s-tx" x="38.5" y="22.4" font-size="15" text-anchor="middle">React</text></g>
+    <g transform="translate(382 142)"><rect class="s-surf" width="95" height="34" rx="9"/><text class="s-tx" x="47.5" y="22.4" font-size="15" text-anchor="middle">Node.js</text></g>
+    <g transform="translate(486 142)"><rect class="s-surf" width="104" height="34" rx="9"/><text class="s-tx" x="52" y="22.4" font-size="15" text-anchor="middle">Tailwind</text></g>
+    <g transform="translate(599 142)"><rect class="s-surf" width="122" height="34" rx="9"/><text class="s-tx" x="61" y="22.4" font-size="15" text-anchor="middle">RainbowKit</text></g>
+    <g transform="translate(730 142)"><rect class="s-surf" width="104" height="34" rx="9"/><text class="s-tx" x="52" y="22.4" font-size="15" text-anchor="middle">Supabase</text></g>
+    <g transform="translate(843 142)"><rect class="s-surf" width="140" height="34" rx="9"/><text class="s-tx" x="70" y="22.4" font-size="15" text-anchor="middle">Postgres RLS</text></g>
+    <g transform="translate(992 142)"><rect class="s-surf" width="59" height="34" rx="9"/><text class="s-tx" x="29.5" y="22.4" font-size="15" text-anchor="middle">PWA</text></g>
+    <text class="s-aa" x="34" y="212" font-size="12" letter-spacing="3.4">INTELLIGENCE</text>
+    <g transform="translate(34 224)"><rect class="s-surf" width="68" height="34" rx="9"/><text class="s-tx" x="34" y="22.4" font-size="15" text-anchor="middle">Groq</text></g>
+    <g transform="translate(111 224)"><rect class="s-surf" width="86" height="34" rx="9"/><text class="s-tx" x="43" y="22.4" font-size="15" text-anchor="middle">Gemini</text></g>
+    <g transform="translate(206 224)"><rect class="s-surf" width="122" height="34" rx="9"/><text class="s-tx" x="61" y="22.4" font-size="15" text-anchor="middle">OpenRouter</text></g>
+    <g transform="translate(337 224)"><rect class="s-surf" width="140" height="34" rx="9"/><text class="s-tx" x="70" y="22.4" font-size="15" text-anchor="middle">Hugging Face</text></g>
+    <g transform="translate(486 224)"><rect class="s-surf" width="158" height="34" rx="9"/><text class="s-tx" x="79" y="22.4" font-size="15" text-anchor="middle">FLUX.1-schnell</text></g>
+    <g transform="translate(653 224)"><rect class="s-surf" width="122" height="34" rx="9"/><text class="s-tx" x="61" y="22.4" font-size="15" text-anchor="middle">Qwen2.5-VL</text></g>
+    <g transform="translate(784 224)"><rect class="s-surf" width="149" height="34" rx="9"/><text class="s-tx" x="74.5" y="22.4" font-size="15" text-anchor="middle">SSE streaming</text></g>
+    <g transform="translate(942 224)"><rect class="s-surf" width="95" height="34" rx="9"/><text class="s-tx" x="47.5" y="22.4" font-size="15" text-anchor="middle">Pyodide</text></g>
+    <text class="s-ab" x="34" y="294" font-size="12" letter-spacing="3.4">OPERATIONS</text>
+    <g transform="translate(34 306)"><rect class="s-surf" width="131" height="34" rx="9"/><text class="s-tx" x="65.5" y="22.4" font-size="15" text-anchor="middle">Vercel Edge</text></g>
+    <g transform="translate(174 306)"><rect class="s-surf" width="158" height="34" rx="9"/><text class="s-tx" x="79" y="22.4" font-size="15" text-anchor="middle">GitHub Actions</text></g>
+    <g transform="translate(341 306)"><rect class="s-surf" width="122" height="34" rx="9"/><text class="s-tx" x="61" y="22.4" font-size="15" text-anchor="middle">Fork tests</text></g>
+    <g transform="translate(472 306)"><rect class="s-surf" width="176" height="34" rx="9"/><text class="s-tx" x="88" y="22.4" font-size="15" text-anchor="middle">Fuzz + invariant</text></g>
+    <g transform="translate(657 306)"><rect class="s-surf" width="131" height="34" rx="9"/><text class="s-tx" x="65.5" y="22.4" font-size="15" text-anchor="middle">Python 3.11</text></g>
+    <g transform="translate(797 306)"><rect class="s-surf" width="122" height="34" rx="9"/><text class="s-tx" x="61" y="22.4" font-size="15" text-anchor="middle">CSP · HSTS</text></g>
+    <g transform="translate(928 306)"><rect class="s-surf" width="149" height="34" rx="9"/><text class="s-tx" x="74.5" y="22.4" font-size="15" text-anchor="middle">Rate limiting</text></g>
+  </g>
+</svg>
