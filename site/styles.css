@@ -698,13 +698,25 @@ section + section {
   margin-top: 8px;
 }
 
+.card__links {
+  display: grid;
+  justify-items: start;
+  gap: 10px;
+  margin-top: 18px;
+}
+
 .card__link {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  margin-top: 18px;
   font: 500 12.5px/1 var(--mono);
   color: var(--accent);
+}
+
+/* The deployed app is the other half of the pair, so it reads as a sibling of
+   the repository link rather than a second call to the same place. */
+.card__link--live {
+  color: var(--violet);
 }
 
 .card__link::after {
