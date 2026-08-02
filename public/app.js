@@ -39,10 +39,27 @@
     toggle.setAttribute('title', 'Switch to ' + next + ' theme');
   }
 
-  function setTheme(theme) {
+  /**
+   * A swap repoints every token at once, but only some elements transition
+   * colour — nav links, buttons, chips, the 32 list rows. Those cross-fade for
+   * up to 200ms while the page background, cards and hero snap, so the text
+   * and borders visibly trail the new theme. Pin transitions off, apply the
+   * theme, force the recalc, then hand them back: the new colours are already
+   * the "before" value, so nothing has anything left to animate.
+   */
+  function applyTheme(theme) {
+    root.setAttribute('data-theme-switching', '');
     root.setAttribute('data-theme', theme);
+    void root.offsetHeight;
+    root.removeAttribute('data-theme-switching');
     describe(theme);
     paint(theme);
+  }
+
+  /** A deliberate choice: pins the theme and stops it following the system. */
+  function setTheme(theme) {
+    root.removeAttribute('data-theme-auto');
+    applyTheme(theme);
     try {
       localStorage.setItem('theme', theme);
     } catch (e) {
@@ -56,6 +73,20 @@
   on(toggle, 'click', function () {
     setTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
   });
+
+  /* Until the visitor picks a side, the OS is in charge. The stylesheet
+     already follows it on its own, but theme.js has resolved the preference
+     into data-theme by now, and that attribute outranks the media query — so
+     without this the page would sit on whatever the OS said at load. */
+  var scheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+  function followSystem(event) {
+    if (!root.hasAttribute('data-theme-auto')) return;
+    applyTheme(event.matches ? 'dark' : 'light');
+  }
+
+  if (scheme.addEventListener) scheme.addEventListener('change', followSystem);
+  else if (scheme.addListener) scheme.addListener(followSystem);
 
   /* -------------------------------------------------- rotating tagline */
 
