@@ -36,7 +36,7 @@ has CI that has to go green first.
 
 | Project | | |
 | :--- | :--- | :--- |
-| **[Folio](https://github.com/wlylabs/Folio)** | token launchpad | ERC20s that are their own bonding-curve market maker, live with real ETH. 300+ Foundry tests. |
+| **[Folio](https://github.com/wlylabs/Folio)** | token launchpad | ERC20s that are their own bonding-curve market maker, live with real ETH. 300+ Foundry tests. Live at **[dappfolio.vercel.app](https://dappfolio.vercel.app)**. |
 | **[wlybot](https://github.com/wlylabs/wlybot)** | AI chat assistant | Streaming chat PWA on one edge function, with three-provider failover resolved before the first byte. |
 | **[wlystock](https://github.com/wlylabs/wlystock)** | AI stock photo pipeline | Prompt library to submission-ready stock photography, unattended, with a fallback at every stage. |
 

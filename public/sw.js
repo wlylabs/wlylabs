@@ -12,7 +12,7 @@
  *   /api, /banner  never cached — the edge function is the point of them
  */
 
-var VERSION = "ab98de220752";
+var VERSION = "1db8126e6101";
 var CACHE = 'wlylabs-' + VERSION;
 
 var SHELL = [
