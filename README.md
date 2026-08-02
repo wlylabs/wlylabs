@@ -75,7 +75,10 @@ rotating tagline, scroll reveal and nav highlighting are enhancements on top.
 Because no styles or scripts are inline, the Content-Security-Policy in
 [`vercel.json`](vercel.json) needs no `unsafe-inline`: `default-src 'none'` with
 `self` for scripts, styles and images, plus nosniff, `Referrer-Policy`,
-frame-deny, `Permissions-Policy` and HSTS.
+frame-deny, `Permissions-Policy` and HSTS. That CSP is scoped to the document
+routes only — served on an SVG response it would also apply to that SVG's own
+`<style>` block, which is what carries its palette, so the images must not
+inherit it.
 
 **The README images.** Each SVG carries both palettes in one document and
 switches on `prefers-color-scheme`, so this page needs a single relative URL per

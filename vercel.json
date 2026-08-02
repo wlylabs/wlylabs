@@ -23,7 +23,6 @@
       ]
     },
     {
-      "//": "Scoped to the document only. A default-src 'none' policy on an SVG response also applies to that SVG's own <style> block, which is what carries its palette — the images must not inherit it.",
       "source": "/",
       "headers": [
         {
