@@ -15,7 +15,7 @@
 
 <a href="https://wlylabs.vercel.app"><img src="public/btn-site.svg" alt="Open the wlylabs site" /></a>
 &nbsp;
-<a href="https://x.com/w0x___"><img src="public/btn-x.svg" alt="Follow @w0x___ on X" /></a>
+<a href="https://x.com/gaptekcat"><img src="public/btn-x.svg" alt="Follow @gaptekcat on X" /></a>
 &nbsp;
 <a href="https://github.com/wlylabs?tab=repositories"><img src="public/btn-repos.svg" alt="Browse the repositories" /></a>
 
