@@ -317,9 +317,6 @@
 
       if (action === 'theme') {
         setTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
-      } else if (action === 'copy-handle') {
-        copy(item, item.querySelector('.cmd__hint').textContent);
-        return;
       } else if (action === 'copy-url') {
         copy(item, location.origin + '/');
         return;
