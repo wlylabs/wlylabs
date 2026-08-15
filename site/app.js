@@ -256,7 +256,7 @@
 
     /**
      * Substring anywhere in the keywords, or a subsequence of the label alone —
-     * so "cpyhndl" still finds "Copy handle", while a loose run of letters
+     * so "cpylnk" still finds "Copy link to this page", while a loose run of letters
      * scattered across a long keyword list does not drag in every other row.
      */
     var entries = items.map(function (el) {
@@ -317,9 +317,6 @@
 
       if (action === 'theme') {
         setTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
-      } else if (action === 'copy-handle') {
-        copy(item, item.querySelector('.cmd__hint').textContent);
-        return;
       } else if (action === 'copy-url') {
         copy(item, location.origin + '/');
         return;
