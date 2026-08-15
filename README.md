@@ -11,7 +11,7 @@
 
 <div align="center">
 
-<img src="public/hero.svg" width="100%" alt="wlylabs — solo builder across smart contracts, edge AI and automation" />
+<img src="public/hero.svg" width="100%" alt="wlylabs — solo builder shipping zero-knowledge, offline-first web apps" />
 
 <a href="https://wlylabs.vercel.app"><img src="public/btn-site.svg" alt="Open the wlylabs site" /></a>
 &nbsp;
@@ -24,21 +24,20 @@
 <br />
 
 Independent **solo builder** — no team, no standups. The work spans three layers
-and I own all of them: **onchain** (Solidity contracts that hold real ETH),
-**the app in front of it** (Next.js, wallets, auth, PWA), and **the automation
-behind it** (edge functions, AI pipelines, scheduled CI).
+and I own all of them: **the cryptography** (key hierarchies, AEAD, password
+stretching that runs in the browser), **the app around it** (Next.js, React,
+offline-first PWAs), and **the edge in front of it** (per-request CSP nonces,
+rate limits, storage that only ever holds ciphertext).
 
-I build **AI-native**, but nothing ships on vibes alone: contracts land with fuzz
-and invariant suites, endpoints land with rate limits and a CSP, and every repo
-has CI that has to go green first.
+I build **AI-native**, but nothing ships on vibes alone: key hierarchies land
+with tests that prove what they derive, endpoints land with rate limits and a
+nonce CSP, and the trade-offs are written down next to the code.
 
 <br />
 
 | Project | | |
 | :--- | :--- | :--- |
-| **[Folio](https://github.com/wlylabs/Folio)** | token launchpad | ERC20s that are their own bonding-curve market maker, live with real ETH. 300+ Foundry tests. Live at **[dappfolio.vercel.app](https://dappfolio.vercel.app)**. |
-| **[wlybot](https://github.com/wlylabs/wlybot)** | AI chat assistant | Streaming chat PWA on one edge function, with three-provider failover resolved before the first byte. |
-| **[wlystock](https://github.com/wlylabs/wlystock)** | AI stock photo pipeline | Prompt library to submission-ready stock photography, unattended, with a fallback at every stage. |
+| **[Purbo](https://github.com/wlylabs/purbo)** | zero-knowledge password manager | A vault opened the way a wallet is: 24 words are the only root, every entry is sealed in the browser, and the server holds ciphertext it has no key for. Live at **[purbo.vercel.app](https://purbo.vercel.app)**. |
 
 **[The full profile — work, capabilities, stack and principles — is on the site.](https://wlylabs.vercel.app)**
 

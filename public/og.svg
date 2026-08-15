@@ -1,12 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="wlylabs — solo builder across smart contracts, edge AI and automation">
-  <title>wlylabs — solo builder across smart contracts, edge AI and automation</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="wlylabs — solo builder shipping zero-knowledge, offline-first web apps">
+  <title>wlylabs — solo builder shipping zero-knowledge, offline-first web apps</title>
   <defs>
     <linearGradient id="o-word" x1="0" y1="0" x2="1" y2="0.6">
       <stop offset="0%" stop-color="#E8895F"/>
       <stop offset="55%" stop-color="#E8895F"/>
       <stop offset="100%" stop-color="#8B5CF6"/>
     </linearGradient>
-    <linearGradient id="o-area" x1="0" y1="0" x2="0" y2="1">
+    <!-- User space so the straight middle path still has a gradient to paint. -->
+    <linearGradient id="o-conv" gradientUnits="userSpaceOnUse" x1="96" y1="0" x2="1104" y2="0">
+      <stop offset="0%" stop-color="#E8895F"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="o-area" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#E8895F" stop-opacity="0.28"/>
       <stop offset="100%" stop-color="#E8895F" stop-opacity="0"/>
     </linearGradient>
@@ -24,10 +29,15 @@
   <g font-family="ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace">
     <text x="96" y="188" font-size="22" letter-spacing="7" fill="#8B949E">INDEPENDENT  ·  SOLO BUILDER</text>
     <text x="96" y="318" font-size="128" font-weight="700" letter-spacing="-4" fill="url(#o-word)">wlylabs</text>
-    <text x="96" y="378" font-size="27" fill="#E6EDF3">Solidity  ·  Next.js  ·  Edge AI  ·  Automation</text>
+    <text x="96" y="378" font-size="27" fill="#E6EDF3">WebCrypto  ·  Next.js  ·  Passkeys  ·  Offline-first</text>
   </g>
-  <path d="M96,520L110,519.5L124,518.98L138,518.44L152,517.88L166,517.3L180,516.71L194,516.09L208,515.45L222,514.79L236,514.1L250,513.4L264,512.67L278,511.91L292,511.12L306,510.31L320,509.48L334,508.61L348,507.71L362,506.78L376,505.82L390,504.83L404,503.8L418,502.73L432,501.63L446,500.49L460,499.31L474,498.09L488,496.83L502,495.53L516,494.18L530,492.78L544,491.33L558,489.84L572,488.29L586,486.69L600,485.03L614,483.32L628,481.55L642,479.71L656,477.81L670,475.85L684,473.82L698,471.72L712,469.54L726,467.29L740,464.96L754,462.56L768,460.06L782,457.49L796,454.82L810,452.06L824,449.2L838,446.25L852,443.19L866,440.03L880,436.76L894,433.38L908,429.87L922,426.25L936,422.5L950,418.63L964,414.61L978,410.46L992,406.17L1006,401.72L1020,397.13L1034,392.37L1048,387.45L1062,382.36L1076,377.09L1090,371.64L1104,366L1104,520L96,520Z" fill="url(#o-area)"/>
-  <path d="M96,520L110,519.5L124,518.98L138,518.44L152,517.88L166,517.3L180,516.71L194,516.09L208,515.45L222,514.79L236,514.1L250,513.4L264,512.67L278,511.91L292,511.12L306,510.31L320,509.48L334,508.61L348,507.71L362,506.78L376,505.82L390,504.83L404,503.8L418,502.73L432,501.63L446,500.49L460,499.31L474,498.09L488,496.83L502,495.53L516,494.18L530,492.78L544,491.33L558,489.84L572,488.29L586,486.69L600,485.03L614,483.32L628,481.55L642,479.71L656,477.81L670,475.85L684,473.82L698,471.72L712,469.54L726,467.29L740,464.96L754,462.56L768,460.06L782,457.49L796,454.82L810,452.06L824,449.2L838,446.25L852,443.19L866,440.03L880,436.76L894,433.38L908,429.87L922,426.25L936,422.5L950,418.63L964,414.61L978,410.46L992,406.17L1006,401.72L1020,397.13L1034,392.37L1048,387.45L1062,382.36L1076,377.09L1090,371.64L1104,366" fill="none" stroke="url(#o-word)" stroke-width="4" stroke-linecap="round"/>
-  <circle cx="1104" cy="366" r="9" fill="#8B5CF6"/>
+  <path d="M96,408C720.96,408 720.96,468 1104,468C720.96,468 720.96,528 96,528Z" fill="url(#o-area)"/>
+  <path d="M96,408C720.96,408 720.96,468 1104,468" fill="none" stroke="url(#o-conv)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M96,468C720.96,468 720.96,468 1104,468" fill="none" stroke="url(#o-conv)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M96,528C720.96,528 720.96,468 1104,468" fill="none" stroke="url(#o-conv)" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="96" cy="408" r="7" fill="#E8895F"/>
+  <circle cx="96" cy="468" r="7" fill="#E8895F"/>
+  <circle cx="96" cy="528" r="7" fill="#E8895F"/>
+  <circle cx="1104" cy="468" r="9" fill="#8B5CF6"/>
   <rect x="96" y="556" width="112" height="5" rx="2.5" fill="url(#o-word)"/>
 </svg>

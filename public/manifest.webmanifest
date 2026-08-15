@@ -1,7 +1,7 @@
 {
   "name": "wlylabs — independent solo builder",
   "short_name": "wlylabs",
-  "description": "Independent solo builder. Bonding-curve ERC20s proven with Foundry, streaming LLM apps on the edge, and pipelines that publish their own artifacts.",
+  "description": "Independent solo builder. Client-side cryptography where the key never leaves the browser, authentication with no account to breach, and installable apps that keep working with the network off.",
   "id": "/",
   "start_url": "/",
   "scope": "/",

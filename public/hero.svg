@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="wlylabs — solo builder across smart contracts, edge AI and automation">
-  <title>wlylabs — solo builder across smart contracts, edge AI and automation</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="wlylabs — solo builder shipping zero-knowledge, offline-first web apps">
+  <title>wlylabs — solo builder shipping zero-knowledge, offline-first web apps</title>
   <defs>
     <pattern id="h-grid" width="40" height="40" patternUnits="userSpaceOnUse">
       <path class="h-grid" d="M40 0H0V40" fill="none" stroke-width="1"/>
@@ -13,7 +13,16 @@
       <stop class="h-sa" offset="0%"/>
       <stop class="h-sb" offset="100%"/>
     </linearGradient>
-    <linearGradient id="h-area" x1="0" y1="0" x2="0" y2="1">
+    <!--
+      User space, not the default bounding box: the middle path is a straight
+      horizontal line, and a box with no height would leave a bounding-box
+      gradient with nothing to paint into.
+    -->
+    <linearGradient id="h-conv" gradientUnits="userSpaceOnUse" x1="716" y1="0" x2="1144" y2="0">
+      <stop class="h-sa" offset="0%"/>
+      <stop class="h-sb" offset="100%"/>
+    </linearGradient>
+    <linearGradient id="h-area" x1="0" y1="0" x2="1" y2="0">
       <stop class="h-s-area-t" offset="0%"/>
       <stop class="h-s-area-b" offset="100%"/>
     </linearGradient>
@@ -62,9 +71,9 @@
     <g transform="translate(56 234)">
       <text class="h-aa" x="0" y="0" font-size="19">&#8250;</text>
       <text class="h-tx h-line h-l0" x="20" y="0" font-size="19">Solo builder. Full stack of one.</text>
-      <text class="h-tx h-line h-l1" x="20" y="0" font-size="19">Bonding-curve ERC20s, proven with Foundry.</text>
-      <text class="h-tx h-line h-l2" x="20" y="0" font-size="19">Streaming LLM apps that fail over at the edge.</text>
-      <text class="h-tx h-line h-l3" x="20" y="0" font-size="19">Pipelines that keep running while I sleep.</text>
+      <text class="h-tx h-line h-l1" x="20" y="0" font-size="19">Vaults the server is unable to read.</text>
+      <text class="h-tx h-line h-l2" x="20" y="0" font-size="19">Keys derived on the device, never uploaded.</text>
+      <text class="h-tx h-line h-l3" x="20" y="0" font-size="19">Apps that still open with the network off.</text>
     </g>
 
     <g transform="translate(56 256)">
@@ -75,17 +84,21 @@
   </g>
 
   <g class="h-mono">
-    <text class="h-fa" x="700" y="90" font-size="12" letter-spacing="2.8">PRICE / SUPPLY</text>
-    <line class="h-hair" x1="700" y1="215.5" x2="1144" y2="215.5" stroke-width="1" stroke-dasharray="2 6" opacity="0.7"/>
-    <line class="h-hair" x1="700" y1="181" x2="1144" y2="181" stroke-width="1" stroke-dasharray="2 6" opacity="0.7"/>
-    <line class="h-hair" x1="700" y1="146.5" x2="1144" y2="146.5" stroke-width="1" stroke-dasharray="2 6" opacity="0.7"/>
-    <line class="h-hair" x1="700" y1="250" x2="1144" y2="250" stroke-width="1"/>
-    <path class="h-fill" d="M700,250L706.17,249.55L712.33,249.08L718.5,248.6L724.67,248.1L730.83,247.58L737,247.05L743.17,246.49L749.33,245.92L755.5,245.33L761.67,244.72L767.83,244.08L774,243.43L780.17,242.75L786.33,242.05L792.5,241.32L798.67,240.57L804.83,239.79L811,238.99L817.17,238.15L823.33,237.29L829.5,236.4L835.67,235.48L841.83,234.53L848,233.54L854.17,232.52L860.33,231.46L866.5,230.37L872.67,229.24L878.83,228.07L885,226.86L891.17,225.61L897.33,224.31L903.5,222.97L909.67,221.59L915.83,220.15L922,218.67L928.17,217.13L934.33,215.54L940.5,213.9L946.67,212.2L952.83,210.44L959,208.62L965.17,206.73L971.33,204.78L977.5,202.77L983.67,200.68L989.83,198.52L996,196.29L1002.17,193.98L1008.33,191.59L1014.5,189.12L1020.67,186.56L1026.83,183.91L1033,181.17L1039.17,178.34L1045.33,175.41L1051.5,172.38L1057.67,169.24L1063.83,165.99L1070,162.63L1076.17,159.16L1082.33,155.56L1088.5,151.84L1094.67,147.99L1100.83,144.01L1107,139.89L1113.17,135.63L1119.33,131.22L1125.5,126.66L1131.67,121.94L1137.83,117.05L1144,112L1144,250L700,250Z" fill="url(#h-area)"/>
-    <path class="h-curve" d="M700,250L706.17,249.55L712.33,249.08L718.5,248.6L724.67,248.1L730.83,247.58L737,247.05L743.17,246.49L749.33,245.92L755.5,245.33L761.67,244.72L767.83,244.08L774,243.43L780.17,242.75L786.33,242.05L792.5,241.32L798.67,240.57L804.83,239.79L811,238.99L817.17,238.15L823.33,237.29L829.5,236.4L835.67,235.48L841.83,234.53L848,233.54L854.17,232.52L860.33,231.46L866.5,230.37L872.67,229.24L878.83,228.07L885,226.86L891.17,225.61L897.33,224.31L903.5,222.97L909.67,221.59L915.83,220.15L922,218.67L928.17,217.13L934.33,215.54L940.5,213.9L946.67,212.2L952.83,210.44L959,208.62L965.17,206.73L971.33,204.78L977.5,202.77L983.67,200.68L989.83,198.52L996,196.29L1002.17,193.98L1008.33,191.59L1014.5,189.12L1020.67,186.56L1026.83,183.91L1033,181.17L1039.17,178.34L1045.33,175.41L1051.5,172.38L1057.67,169.24L1063.83,165.99L1070,162.63L1076.17,159.16L1082.33,155.56L1088.5,151.84L1094.67,147.99L1100.83,144.01L1107,139.89L1113.17,135.63L1119.33,131.22L1125.5,126.66L1131.67,121.94L1137.83,117.05L1144,112" pathLength="1" fill="none" stroke="url(#h-bar)" stroke-width="2.5" stroke-linecap="round"/>
+    <text class="h-fa" x="716" y="90" font-size="12" letter-spacing="2.8">PASSPHRASE  ·  PHRASE  ·  PASSKEY</text>
+    <line class="h-hair" x1="844.4" y1="104" x2="844.4" y2="260" stroke-width="1" stroke-dasharray="2 6" opacity="0.7"/>
+    <line class="h-hair" x1="951.4" y1="104" x2="951.4" y2="260" stroke-width="1" stroke-dasharray="2 6" opacity="0.7"/>
+    <line class="h-hair" x1="1058.4" y1="104" x2="1058.4" y2="260" stroke-width="1" stroke-dasharray="2 6" opacity="0.7"/>
+    <path class="h-fill" d="M716,118C981.36,118 981.36,182 1144,182C981.36,182 981.36,246 716,246Z" fill="url(#h-area)"/>
+    <path class="h-curve" d="M716,118C981.36,118 981.36,182 1144,182" pathLength="1" fill="none" stroke="url(#h-conv)" stroke-width="2.5" stroke-linecap="round"/>
+    <path class="h-curve" d="M716,182C981.36,182 981.36,182 1144,182" pathLength="1" fill="none" stroke="url(#h-conv)" stroke-width="2.5" stroke-linecap="round"/>
+    <path class="h-curve" d="M716,246C981.36,246 981.36,182 1144,182" pathLength="1" fill="none" stroke="url(#h-conv)" stroke-width="2.5" stroke-linecap="round"/>
+    <circle class="h-aa" cx="716" cy="118" r="4.5"/>
+    <circle class="h-aa" cx="716" cy="182" r="4.5"/>
+    <circle class="h-aa" cx="716" cy="246" r="4.5"/>
     <g class="h-tip">
-      <circle class="h-ab" cx="1144" cy="112" r="11" opacity="0.16"/>
-      <circle class="h-ab" cx="1144" cy="112" r="4.5"/>
+      <circle class="h-ab" cx="1144" cy="182" r="11" opacity="0.16"/>
+      <circle class="h-ab" cx="1144" cy="182" r="4.5"/>
     </g>
-    <text class="h-fa" x="1144" y="276" font-size="12" letter-spacing="1.4" text-anchor="end">constant product  ·  reserve-backed</text>
+    <text class="h-fa" x="1144" y="272" font-size="12" letter-spacing="1.4" text-anchor="end">one root key  ·  never uploaded</text>
   </g>
 </svg>
