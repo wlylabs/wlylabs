@@ -11,7 +11,7 @@
 
 <div align="center">
 
-<img src="public/hero.svg" width="100%" alt="wlylabs — solo builder across smart contracts, edge AI and automation" />
+<img src="public/hero.svg" width="100%" alt="wlylabs — solo builder of end-to-end encrypted web apps" />
 
 <a href="https://wlylabs.vercel.app"><img src="public/btn-site.svg" alt="Open the wlylabs site" /></a>
 &nbsp;
@@ -23,22 +23,19 @@
 
 <br />
 
-Independent **solo builder** — no team, no standups. The work spans three layers
-and I own all of them: **onchain** (Solidity contracts that hold real ETH),
-**the app in front of it** (Next.js, wallets, auth, PWA), and **the automation
-behind it** (edge functions, AI pipelines, scheduled CI).
+Independent **solo builder** — no team, no standups. I own every layer of what I
+ship: the **cryptography**, **the app in front of it** (Next.js, PWA, offline),
+and **the platform behind it** (edge middleware, rate limits, a per-request CSP).
 
-I build **AI-native**, but nothing ships on vibes alone: contracts land with fuzz
-and invariant suites, endpoints land with rate limits and a CSP, and every repo
-has CI that has to go green first.
+I build **AI-native**, but nothing ships on vibes alone: key derivation lands
+with tests, endpoints land with rate limits and a nonce CSP, and the threat
+model is written down before the feature is.
 
 <br />
 
 | Project | | |
 | :--- | :--- | :--- |
-| **[Folio](https://github.com/wlylabs/Folio)** | token launchpad | ERC20s that are their own bonding-curve market maker, live with real ETH. 300+ Foundry tests. Live at **[dappfolio.vercel.app](https://dappfolio.vercel.app)**. |
-| **[wlybot](https://github.com/wlylabs/wlybot)** | AI chat assistant | Streaming chat PWA on one edge function, with three-provider failover resolved before the first byte. |
-| **[wlystock](https://github.com/wlylabs/wlystock)** | AI stock photo pipeline | Prompt library to submission-ready stock photography, unattended, with a fallback at every stage. |
+| **[Purbo](https://github.com/wlylabs/purbo)** | zero-knowledge password manager | A 24-word recovery phrase is the vault's only root: it derives both the key that encrypts entries and the key that authenticates to the server, which holds ciphertext and nothing else. Live at **[purbo.vercel.app](https://purbo.vercel.app)**. |
 
 **[The full profile — work, capabilities, stack and principles — is on the site.](https://wlylabs.vercel.app)**
 

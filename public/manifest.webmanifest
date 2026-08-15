@@ -1,7 +1,7 @@
 {
   "name": "wlylabs — independent solo builder",
   "short_name": "wlylabs",
-  "description": "Independent solo builder. Bonding-curve ERC20s proven with Foundry, streaming LLM apps on the edge, and pipelines that publish their own artifacts.",
+  "description": "Independent solo builder. Purbo is a zero-knowledge password manager: keys derived in the browser from a 24-word phrase, ciphertext-only storage, and a server that cannot read a vault.",
   "id": "/",
   "start_url": "/",
   "scope": "/",

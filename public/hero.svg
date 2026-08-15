@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="wlylabs — solo builder across smart contracts, edge AI and automation">
-  <title>wlylabs — solo builder across smart contracts, edge AI and automation</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="wlylabs — solo builder of end-to-end encrypted web apps">
+  <title>wlylabs — solo builder of end-to-end encrypted web apps</title>
   <defs>
     <pattern id="h-grid" width="40" height="40" patternUnits="userSpaceOnUse">
       <path class="h-grid" d="M40 0H0V40" fill="none" stroke-width="1"/>
@@ -62,9 +62,9 @@
     <g transform="translate(56 234)">
       <text class="h-aa" x="0" y="0" font-size="19">&#8250;</text>
       <text class="h-tx h-line h-l0" x="20" y="0" font-size="19">Solo builder. Full stack of one.</text>
-      <text class="h-tx h-line h-l1" x="20" y="0" font-size="19">Bonding-curve ERC20s, proven with Foundry.</text>
-      <text class="h-tx h-line h-l2" x="20" y="0" font-size="19">Streaming LLM apps that fail over at the edge.</text>
-      <text class="h-tx h-line h-l3" x="20" y="0" font-size="19">Pipelines that keep running while I sleep.</text>
+      <text class="h-tx h-line h-l1" x="20" y="0" font-size="19">Zero-knowledge by construction, not by policy.</text>
+      <text class="h-tx h-line h-l2" x="20" y="0" font-size="19">Keys live in the browser. Servers see bytes.</text>
+      <text class="h-tx h-line h-l3" x="20" y="0" font-size="19">Signed in and able to decrypt are one fact.</text>
     </g>
 
     <g transform="translate(56 256)">
@@ -75,7 +75,7 @@
   </g>
 
   <g class="h-mono">
-    <text class="h-fa" x="700" y="90" font-size="12" letter-spacing="2.8">PRICE / SUPPLY</text>
+    <text class="h-fa" x="700" y="90" font-size="12" letter-spacing="2.8">ZERO KNOWLEDGE</text>
     <line class="h-hair" x1="700" y1="215.5" x2="1144" y2="215.5" stroke-width="1" stroke-dasharray="2 6" opacity="0.7"/>
     <line class="h-hair" x1="700" y1="181" x2="1144" y2="181" stroke-width="1" stroke-dasharray="2 6" opacity="0.7"/>
     <line class="h-hair" x1="700" y1="146.5" x2="1144" y2="146.5" stroke-width="1" stroke-dasharray="2 6" opacity="0.7"/>
@@ -86,6 +86,6 @@
       <circle class="h-ab" cx="1144" cy="112" r="11" opacity="0.16"/>
       <circle class="h-ab" cx="1144" cy="112" r="4.5"/>
     </g>
-    <text class="h-fa" x="1144" y="276" font-size="12" letter-spacing="1.4" text-anchor="end">constant product  ·  reserve-backed</text>
+    <text class="h-fa" x="1144" y="276" font-size="12" letter-spacing="1.4" text-anchor="end">keys on device  ·  sealed storage</text>
   </g>
 </svg>
