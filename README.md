@@ -15,8 +15,6 @@
 
 <a href="https://wlylabs.vercel.app"><img src="public/btn-site.svg" alt="Open the wlylabs site" /></a>
 &nbsp;
-<a href="https://x.com/gaptekcat"><img src="public/btn-x.svg" alt="Follow @gaptekcat on X" /></a>
-&nbsp;
 <a href="https://github.com/wlylabs?tab=repositories"><img src="public/btn-repos.svg" alt="Browse the repositories" /></a>
 
 </div>
@@ -77,9 +75,9 @@ its handler is attached, so the page never shows a dead affordance.
 **Getting around.** <kbd>⌘K</kbd> / <kbd>Ctrl K</kbd> (or <kbd>/</kbd>) opens a
 command palette: sections, repositories, copy-to-clipboard, theme, share,
 install, print. It filters on substrings across every keyword and on a
-subsequence of the label, so `cpyhndl` finds *Copy handle*. On a phone it opens
-as a bottom sheet with a 16px input, which is the threshold below which iOS
-Safari zooms the page on focus.
+subsequence of the label, so `cpylnk` finds *Copy link to this page*. On a
+phone it opens as a bottom sheet with a 16px input, which is the threshold
+below which iOS Safari zooms the page on focus.
 
 **Print.** The stylesheet has a real print form, so "save as PDF" produces a
 one-page résumé rather than a screenshot: chrome dropped, the dark palette
