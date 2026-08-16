@@ -15,8 +15,6 @@
 
 <a href="https://wlylabs.vercel.app"><img src="public/btn-site.svg" alt="Open the wlylabs site" /></a>
 &nbsp;
-<a href="https://x.com/gaptekcat"><img src="public/btn-x.svg" alt="Follow @gaptekcat on X" /></a>
-&nbsp;
 <a href="https://github.com/wlylabs?tab=repositories"><img src="public/btn-repos.svg" alt="Browse the repositories" /></a>
 
 </div>
@@ -36,6 +34,7 @@ model is written down before the feature is.
 | Project | | |
 | :--- | :--- | :--- |
 | **[Purbo](https://github.com/wlylabs/purbo)** | zero-knowledge password manager | A 24-word recovery phrase is the vault's only root: it derives both the key that encrypts entries and the key that authenticates to the server, which holds ciphertext and nothing else. Live at **[purbo.vercel.app](https://purbo.vercel.app)**. |
+| **[Aldus](https://github.com/wlylabs/aldus)** | distraction-free Project Gutenberg reader | Full-text search over the official Gutenberg catalog feed, a calm reader with adjustable themes, and reading progress that lives in `localStorage` first and syncs across devices for anyone who signs in. |
 
 **[The full profile — work, capabilities, stack and principles — is on the site.](https://wlylabs.vercel.app)**
 
