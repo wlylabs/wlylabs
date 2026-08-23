@@ -72,6 +72,16 @@ command palette, rotating tagline, scroll reveal and nav highlighting are
 enhancements on top, and every control that needs scripting stays hidden until
 its handler is attached, so the page never shows a dead affordance.
 
+**Project links.** Every project in [`lib/data.js`](lib/data.js) carries a
+`links` list, and that list is the whole story: each entry becomes a call to
+action on the project card *and* a row in the command palette, so a link is
+added or taken away by editing one line. `kind` — `repo`, `live`, or anything
+else — chooses the wording, the icon and the palette group the link lands in; a
+kind with no preset in `lib/page.js` still renders, taking its wording from the
+entry's own `label`. A project with an empty list shows no links at all, and an
+entry without a usable URL fails the build rather than reaching `public/` as a
+dead anchor.
+
 **Getting around.** <kbd>⌘K</kbd> / <kbd>Ctrl K</kbd> (or <kbd>/</kbd>) opens a
 command palette: sections, repositories, copy-to-clipboard, theme, share,
 install, print. It filters on substrings across every keyword and on a
