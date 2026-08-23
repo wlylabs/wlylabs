@@ -34,7 +34,6 @@ model is written down before the feature is.
 | Project | | |
 | :--- | :--- | :--- |
 | **[Purbo](https://github.com/wlylabs/purbo)** | zero-knowledge password manager | A 24-word recovery phrase is the vault's only root: it derives both the key that encrypts entries and the key that authenticates to the server, which holds ciphertext and nothing else. Live at **[purbo.vercel.app](https://purbo.vercel.app)**. |
-| **[Aldus](https://github.com/wlylabs/aldus)** | distraction-free Project Gutenberg reader | Full-text search over the official Gutenberg catalog feed, a calm reader with adjustable themes, and reading progress that lives in `localStorage` first and syncs across devices for anyone who signs in. |
 
 **[The full profile — work, capabilities, stack and principles — is on the site.](https://wlylabs.vercel.app)**
 
@@ -73,12 +72,22 @@ command palette, rotating tagline, scroll reveal and nav highlighting are
 enhancements on top, and every control that needs scripting stays hidden until
 its handler is attached, so the page never shows a dead affordance.
 
+**Project links.** Every project in [`lib/data.js`](lib/data.js) carries a
+`links` list, and that list is the whole story: each entry becomes a call to
+action on the project card *and* a row in the command palette, so a link is
+added or taken away by editing one line. `kind` — `repo`, `live`, or anything
+else — chooses the wording, the icon and the palette group the link lands in; a
+kind with no preset in `lib/page.js` still renders, taking its wording from the
+entry's own `label`. A project with an empty list shows no links at all, and an
+entry without a usable URL fails the build rather than reaching `public/` as a
+dead anchor.
+
 **Getting around.** <kbd>⌘K</kbd> / <kbd>Ctrl K</kbd> (or <kbd>/</kbd>) opens a
-command palette: sections, repositories, copy-to-clipboard, theme, share,
+command palette: sections, project links, copy-to-clipboard, theme, share,
 install, print. It filters on substrings across every keyword and on a
-subsequence of the label, so `cpyhndl` finds *Copy handle*. On a phone it opens
-as a bottom sheet with a 16px input, which is the threshold below which iOS
-Safari zooms the page on focus.
+subsequence of the label, so `cpylnk` finds *Copy link to this page*. On a phone
+it opens as a bottom sheet with a 16px input, which is the threshold below which
+iOS Safari zooms the page on focus.
 
 **Print.** The stylesheet has a real print form, so "save as PDF" produces a
 one-page résumé rather than a screenshot: chrome dropped, the dark palette
