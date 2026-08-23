@@ -83,11 +83,11 @@ entry without a usable URL fails the build rather than reaching `public/` as a
 dead anchor.
 
 **Getting around.** <kbd>⌘K</kbd> / <kbd>Ctrl K</kbd> (or <kbd>/</kbd>) opens a
-command palette: sections, repositories, copy-to-clipboard, theme, share,
+command palette: sections, project links, copy-to-clipboard, theme, share,
 install, print. It filters on substrings across every keyword and on a
-subsequence of the label, so `cpyhndl` finds *Copy handle*. On a phone it opens
-as a bottom sheet with a 16px input, which is the threshold below which iOS
-Safari zooms the page on focus.
+subsequence of the label, so `cpylnk` finds *Copy link to this page*. On a phone
+it opens as a bottom sheet with a 16px input, which is the threshold below which
+iOS Safari zooms the page on focus.
 
 **Print.** The stylesheet has a real print form, so "save as PDF" produces a
 one-page résumé rather than a screenshot: chrome dropped, the dark palette
