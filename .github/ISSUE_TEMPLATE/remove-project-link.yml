@@ -1,0 +1,33 @@
+name: Remove a project link
+description: Take a link off a project's card and command palette — no code editing needed.
+title: '[remove link] '
+labels: [project-link, remove-link]
+body:
+  - type: dropdown
+    id: project
+    attributes:
+      label: Project
+      description: Which project is the link on?
+      options:
+        - Purbo
+        - Anak Kamar
+    validations:
+      required: true
+  - type: input
+    id: kind
+    attributes:
+      label: Kind
+      description: The Kind of the link to remove, e.g. repo or live.
+      placeholder: repo
+    validations:
+      required: true
+  - type: input
+    id: href
+    attributes:
+      label: Link (URL)
+      description: >-
+        Only needed if the project has more than one link of this Kind —
+        leave blank otherwise.
+      placeholder: https://...
+    validations:
+      required: false

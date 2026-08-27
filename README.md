@@ -92,6 +92,13 @@ npm run links -- remove <project> <kind> [href]       take one away
 without hand-editing the file — commit the result the same as any other
 change.
 
+No terminal on hand? Open **New issue** on this repo and pick **Add a
+project link** or **Remove a project link**. [`.github/workflows/project-links.yml`](.github/workflows/project-links.yml)
+runs the same `npm run links` command from the form's answers, opens a pull
+request, and merges it once checks pass — the whole round trip stays on
+github.com. The workflow declines the form for anyone but a repo
+maintainer, so this doesn't hand write access to the public issue tracker.
+
 **Getting around.** <kbd>⌘K</kbd> / <kbd>Ctrl K</kbd> (or <kbd>/</kbd>) opens a
 command palette: sections, project links, copy-to-clipboard, theme, share,
 install, print. It filters on substrings across every keyword and on a

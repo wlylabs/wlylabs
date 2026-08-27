@@ -1,0 +1,150 @@
+name: project links from issues
+
+# Lets a maintainer add or remove a project link by filling in one of the
+# "project link" issue forms instead of editing lib/data.js — see
+# .github/ISSUE_TEMPLATE/{add,remove}-project-link.yml and scripts/links.mjs.
+# Anyone can open the form on a public repo, so the first step checks the
+# issue author before any of their input is parsed or touches checked-out
+# code; an unrecognised author just gets a polite decline.
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  apply:
+    if: contains(github.event.issue.labels.*.name, 'project-link')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check who opened this
+        id: auth
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const allowed = ['OWNER', 'COLLABORATOR', 'MEMBER'];
+            if (allowed.includes(context.payload.issue.author_association)) {
+              core.setOutput('ok', 'true');
+              return;
+            }
+            await github.rest.issues.createComment({
+              ...context.repo,
+              issue_number: context.issue.number,
+              body: 'Only a repo maintainer can use this form to change project links.',
+            });
+            await github.rest.issues.update({
+              ...context.repo,
+              issue_number: context.issue.number,
+              state: 'closed',
+              state_reason: 'not_planned',
+            });
+
+      - name: Parse the issue form
+        id: form
+        if: steps.auth.outputs.ok == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = context.payload.issue.body || '';
+            const labels = context.payload.issue.labels.map((l) => l.name);
+            const mode = labels.includes('add-link') ? 'add' : labels.includes('remove-link') ? 'remove' : null;
+
+            if (!mode) {
+              core.setFailed('Issue is missing an add-link/remove-link label.');
+              return;
+            }
+
+            const escapeRegExp = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+            function field(label) {
+              const re = new RegExp(`### ${escapeRegExp(label)}\\r?\\n\\r?\\n([^\\r\\n]*)`);
+              const value = body.match(re)?.[1].trim() ?? '';
+              return value === '_No response_' ? '' : value;
+            }
+
+            core.setOutput('mode', mode);
+            core.setOutput('project', field('Project'));
+            core.setOutput('kind', field('Kind'));
+            core.setOutput('href', field('Link (URL)'));
+            core.setOutput('label', field('Label (optional)'));
+
+      - uses: actions/checkout@v4
+        if: steps.auth.outputs.ok == 'true'
+
+      - uses: actions/setup-node@v4
+        if: steps.auth.outputs.ok == 'true'
+        with:
+          node-version: 20
+
+      - name: Apply the change
+        id: apply
+        if: steps.auth.outputs.ok == 'true'
+        env:
+          MODE: ${{ steps.form.outputs.mode }}
+          PROJECT: ${{ steps.form.outputs.project }}
+          KIND: ${{ steps.form.outputs.kind }}
+          HREF: ${{ steps.form.outputs.href }}
+          LABEL: ${{ steps.form.outputs.label }}
+        run: |
+          set +e
+          if [ "$MODE" = add ]; then
+            output=$(node scripts/links.mjs add "$PROJECT" "$KIND" "$HREF" "$LABEL" 2>&1)
+          else
+            output=$(node scripts/links.mjs remove "$PROJECT" "$KIND" "$HREF" 2>&1)
+          fi
+          status=$?
+          echo "output<<END_OF_OUTPUT" >> "$GITHUB_OUTPUT"
+          echo "$output" >> "$GITHUB_OUTPUT"
+          echo "END_OF_OUTPUT" >> "$GITHUB_OUTPUT"
+          exit $status
+
+      - name: Report failure on the issue
+        if: steps.auth.outputs.ok == 'true' && steps.apply.outcome == 'failure'
+        uses: actions/github-script@v7
+        env:
+          DETAIL: ${{ steps.apply.outputs.output }}
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              ...context.repo,
+              issue_number: context.issue.number,
+              body: 'Could not apply this change:\n\n```\n' + process.env.DETAIL + '\n```',
+            });
+            await github.rest.issues.update({
+              ...context.repo,
+              issue_number: context.issue.number,
+              state: 'closed',
+              state_reason: 'not_planned',
+            });
+
+      - name: Open a pull request
+        if: steps.auth.outputs.ok == 'true' && steps.apply.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          MODE: ${{ steps.form.outputs.mode }}
+          PROJECT: ${{ steps.form.outputs.project }}
+          KIND: ${{ steps.form.outputs.kind }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          set -e
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+
+          branch="project-link/issue-$ISSUE_NUMBER"
+          git checkout -b "$branch"
+          git add lib/data.js public
+          git commit -m "$MODE $KIND link on $PROJECT (from #$ISSUE_NUMBER)"
+          git push -u origin "$branch"
+
+          pr_url=$(gh pr create --base main --head "$branch" \
+            --title "Project link: $MODE $KIND on $PROJECT" \
+            --body "Closes #$ISSUE_NUMBER — opened automatically from the project-link issue form.")
+
+          gh issue comment "$ISSUE_NUMBER" --body "Opened $pr_url."
+
+          gh pr merge "$pr_url" --auto --squash --delete-branch \
+            || echo "::warning::Auto-merge isn't enabled for this repo — merge $pr_url by hand."

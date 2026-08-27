@@ -1,0 +1,42 @@
+name: Add a project link
+description: Add a link to a project's card and command palette — no code editing needed.
+title: '[add link] '
+labels: [project-link, add-link]
+body:
+  - type: dropdown
+    id: project
+    attributes:
+      label: Project
+      description: Which project does this link belong to?
+      options:
+        - Purbo
+        - Anak Kamar
+    validations:
+      required: true
+  - type: input
+    id: kind
+    attributes:
+      label: Kind
+      description: >-
+        repo or live get their own wording, icon and palette group; any other
+        word (docs, changelog, ...) still works, using the Label below for
+        its wording.
+      placeholder: repo
+    validations:
+      required: true
+  - type: input
+    id: href
+    attributes:
+      label: Link (URL)
+      description: The full address the link should open.
+      placeholder: https://github.com/wlylabs/example
+    validations:
+      required: true
+  - type: input
+    id: label
+    attributes:
+      label: Label (optional)
+      description: The link's own wording — only used when Kind isn't repo or live.
+      placeholder: Read the docs
+    validations:
+      required: false
