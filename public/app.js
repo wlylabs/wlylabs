@@ -41,7 +41,7 @@
 
   /**
    * A swap repoints every token at once, but only some elements transition
-   * colour — nav links, buttons, chips, the 32 list rows. Those cross-fade for
+   * colour — nav links, buttons, chips, the stack rows. Those cross-fade for
    * up to 200ms while the page background, cards and hero snap, so the text
    * and borders visibly trail the new theme. Pin transitions off, apply the
    * theme, force the recalc, then hand them back: the new colours are already
@@ -344,7 +344,9 @@
 
       function done(ok) {
         if (!hint) return;
-        hint.textContent = ok ? 'Copied' : 'Press ⌘C to copy';
+        // Same modifier the palette's own hint shows: ask a Windows visitor
+        // for ⌘C and the fallback is no help at all.
+        hint.textContent = ok ? 'Copied' : 'Press ' + (apple ? '⌘' : 'Ctrl+') + 'C to copy';
         item.setAttribute('data-flash', ok ? 'true' : 'false');
         setTimeout(function () {
           hint.textContent = was;
